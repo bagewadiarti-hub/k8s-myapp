@@ -9,7 +9,7 @@ def health():
 
 @app.route('/')
 def home():
-    version = os.environ.get('APP_VERSION', '1.0.0')
+    version = os.environ.get('APP_VERSION', '2.0.0')
     return f'hello from backend v{version}'
 
 if __name__ == '__main__':
