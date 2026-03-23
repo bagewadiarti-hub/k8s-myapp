@@ -1,0 +1,5 @@
+apiVersion
+kubectl
+*.log
+__pycache__/
+*.pyc
