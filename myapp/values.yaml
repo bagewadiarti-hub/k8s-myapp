@@ -1,0 +1,20 @@
+frontend:
+  image: nginx:1.25
+  replicas: 2
+  port: 80
+
+backend:
+  image: hashicorp/http-echo
+  replicas: 1
+  port: 3000
+  message: "hello from backend"
+
+postgres:
+  image: postgres:15
+  port: 5432
+  database: myappdb
+  user: myuser
+  password: mypassword123
+
+ingress:
+  host: myapp.local
